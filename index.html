@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vigenere Cipher</title>
+    <link rel="shortcut icon" href="img/image-logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="header-logo">
+                    <img class="image-logo" src="img/image-logo.png" alt="icon-logo">
+                    <div class="title-logo">TVC</div>
+                </div>
+                <nav class="menu-list">
+                    <a href="#" class="menu-link" onclick="show('block')">Документация</a>
+                    <!-- в download указываешь путь к файлу для скачивания, файл должен находиться в папке с сайтом -->
+                    <a href="#" download ="setupProgrammV1.exe" class="menu-link download">Скачать</a>
+                </nav>
+            </div>
+            <!--.header-inner -->
+        </div>
+    </header>
+    <!--header -->
+
+    <main>
+        <div class="container">
+            <div class="info">
+                <div class="info-img">
+                    <img class="image-info" src="img/Korobka 1.png" alt="box">
+                    <!-- в download указываешь путь к файлу для скачивания, файл должен находиться в папке с сайтом -->
+                    <a href="#"  download ="setupProgrammV1.exe">
+                        <button class="button-download">Скачать</button>
+                    </a>
+                </div>
+                <!--.info-img-->
+                <div class="info-text">
+                    <h1 class="title-info title">The Vigenere Cipher</h1>
+                    <h2 class="subtitle-info title">Лицензия программы для шифрования текста</h2>
+                    <div class="description-info">
+                        <p class="description-text "><strong>Разработчик:</strong> Зверев С.В., Худжадзе А.Э.</p>
+                        <p class="description-text"><b>Обновлено:</b> 17.09.2020</p>
+                        <p class="description-text"><b>Архитектура:</b> x64</b></p>
+                        <p class="description-text"><strong>Интерфейс:</strong> русский</p>
+                        <p class="description-text"><b>Категория:</b> программа шифрования</p>
+                        <p class="description-text">
+                            <b>Лицензия</b><br>
+                            Тип продукта: чистая установка<br>
+                            Количество пользователей: 1шт <br>
+                            Срок действия: 36 мес</p>    
+                    </div>
+                </div>
+                <!--.info-text-->
+            </div>
+            <!--.info-->
+            <div class="description">
+                <p><b>Описание:</b><br>
+                    Программа предназначена для шифрования текста по Шифру
+                    Виженера. Шифр Виженера - это метод шифрования алфавитного текста с помощью серии 
+                    переплетенных шифров Цезаря, основанных на буквах ключевого слова. 
+                    Он использует форму полиалфавитного замещения.</p></div>
+
+                    <div class="image-description">
+                        <img class="img-interface interface" src="img/interface.png" alt="interface">
+                        <img class="img-cipher interface" src="img/cipher.png" alt="cipher">
+                    </div>
+            </div>
+            <!--.description-->
+        </div>
+    </main>
+    <!--main-->
+
+    <footer>
+        <div class="footer-intro">
+            <div class="container">
+                <div class="intro-inner">
+                    <div class="info-footer">Контакты:<br>
+                        <br>Тел: 89137416458<br>
+                        Адрес: Садовая 26
+                    </div>
+                    <div class="footer-logo">
+                        <div class="logo">
+                            <img class="image-logo" src="img/image-logo.png" alt="icon-logo">
+                                <div class="title-logo">TVC</div>
+                        </div>
+                        <h3 class="end-site">© 2020</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="filter" ></div>
+    <span class="close"></span>
+    <div id="modalForm">
+        <span class="close" onclick="show('none')"></span>
+        <form action="">
+            <p class="description-docs">1.	Справочная документация<br>
+                1.1	Обозначение пакета<br>
+                1.1.1	Наименование и код пакета<br> 
+                Наименование: «TheVigenereCipher»<br>
+                Справочный номер пакета: 1<br>
+                1.1.2	Версия<br>
+                Версия 1.0<br>
+                1.1.3	Даты<br>
+                Дата публикации оригинала 17.09.2020<br>
+                Дата публикации текущей версии 17.09.2020<br>
+                1.1.4	Изготовитель и торгующая организация <br>
+                Изготовитель Зверев С. В. и Худжадзе А. Э.<br>
+                Адрес изготовителя Садовая 26<br>
+                1.1.5	Язык<br>
+                Русский<br>
+                1.2	Компоненты пакета<br>
+                1.2.1	поставляемые элементы<br>
+                Данное программное обеспечение не поставляется на физических носителях<br>
+                1.3	Функциональное описание программного средства <br>
+                1.3.1	Назначение и область применения<br>
+                Данное программное обеспечение должно применятся исключительно в целях шифрования текста<br>
+                1.3.2	Условия эксплуатации<br>
+                1.3.2.1	Требования к техническим средствам<br>
+                Данное программное средство разработано для ОС Windows и при работе занимает 7.5 МБ памяти<br>
+                1.4	Ввод в действие программного средства <br>
+                1.4.1	ввод в действие<br>
+                Для шифрования сообщения необходимо иметь текстовые файлы для ключа и самого сообщения, также есть возможность написать текст вручную<br>
+                1.5	Использование программного средства<br>
+                1.5.1	Загрузка программного средства<br>
+                Загрузка программы осуществляется путем скачивания инсталлятора с официального сайта программы<br>
+                1.5.2	Управляющие инструкции, команды или языковые правила<br>
+                1.5.2.1	управляющие инструкции и команды <br>
+                После запуска программы необходимо заполнить текстовые поля для ключа и сообщение посредством открытия текстового файла или записать текст вручную<br>
+                1.5.2.2	Выходные сообщения<br>
+                Выходное сообщения «Файл не выбран.», показывается в том случае если была нажата кнопка «Открыть» и в диалоговом окне файл не был выбран<br>
+                1.5.3	Данные<br>
+                1.5.3.1	входные данные<br>
+                Текст в поле сообщения и ключа или текст из файла<br>
+                1.5.3.2	выходные данные<br>
+                Зашифрованный текст в поле «Преобразованное сообщение»<br>
+                1.5.3.3	Ограничения на данные<br>
+                В данной версии программы для шифрования могут использоваться только не прописные символы из кириллицы.<br>
+                1.5.4	Ошибки и сбои<br>
+                Производитель не гарантирует правильность шифрования при использовании в качестве ключа или сообщения символы помимо тех что описаны в пункте 1.5.3.3.<br>
+                1.6	Договорная информация<br>
+                1.6.1	Обязательства или гарантии<br>
+                Гарантия действует до 30 декабря 2020 года.<br>
+                1.6.2	Юридические права и обязанности  <br>
+                Производитель обязуется сопровождать данное программного обеспечение, а также оказывать помощь в использовании данной программы обычными пользователям.<br>
+                Адрес организации: Садовая 26.<br>
+                1.7	Словарь<br>
+                Сообщение – текст который необходимо зашифровать.<br>
+                Ключ – Слово которое используется для шифрования.<br>
+                Зашифрованное сообщение – текст который получается в результате шифрования сообщения.<br>
+            </p>
+        </form>
+    </div>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
